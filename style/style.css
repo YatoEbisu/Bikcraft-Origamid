@@ -40,10 +40,27 @@ img{
     content: "";
     display: block;
     width: 60px;
-    height: 4px;
+    height: 3px;
     background: #000;
     margin: 10px auto;
 }
+.subtitulo-interno{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.subtitulo-interno:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #000;
+    margin: 8px 0;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -73,6 +90,9 @@ img{
 .header-menu ul li a:hover{
     color: #fff;
 }
+.header-menu ul li a.menu-ativo{
+    color: #fff;
+}
 .introducao{
     margin-top: 92px;
     width: 100%;
@@ -87,6 +107,28 @@ img{
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
+}
+.introducao-interna{
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+.introducao-interna h1{
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.introducao-interna h1::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    margin: 10px auto;
 }
 .quote-externo{
     max-width: 320px;
@@ -193,7 +235,8 @@ img{
 }
 .qualidade-lista{
     padding-top: 40px;
-}
+    overflow: hidden;
+    }
 .qualidade-lista li h3{
     font-weight: bold;
     font-size: 18px;
