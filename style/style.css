@@ -7,6 +7,7 @@ p{
 }
 img{
     display: block;
+    width: 100%;
 }
 .btn{
     border: solid 3px #fec63e;
@@ -68,6 +69,9 @@ img{
     background-color: #fec63e;
     padding: 15px 0;
     z-index: 10;
+}
+.logo{
+    width: 100px;
 }
 .header-menu{
     text-align: right;
@@ -229,6 +233,7 @@ img{
 }
 .qualidade img{
     margin: 0 auto;
+    width: 195px;
 }
 .qualidade-lista li{
     text-align: center;
@@ -309,7 +314,29 @@ img{
 }
 .copy{
     width: 100%;
+    margin-top: 20px;
     background: #fec63e;
     padding: 20px 0;
     color: #000;
+}
+[data-slide-nav]{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+[data-slide-nav] button{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    border: none;
+    padding: 0;
+    border-radius: 6px;
+    text-indent: -99px;
+    overflow: hidden;
+    background: #1d1d1d;
+}
+[data-slide-nav] button.active{
+    background: #fec63e;
+
 }

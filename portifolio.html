@@ -6,18 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikcraft - Portifolio</title>
-    <link rel="stylesheet" href="/style/normalize.css">
-    <link rel="stylesheet" href="/style/reset.css">
-    <link rel="stylesheet" href="/style/grid.css">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/portifolio.css">
+    <link rel="stylesheet" href="style/style.min.css">
+
+
 </head>
+<script>document.documentElement.classList.add('js')</script>
 
 <body>
     <header class="header">
         <div class="container">
             <a href="index.html" class="grid-4">
-                <img src="img/bikcraft.svg" alt="">
+                <img class="logo" src="img/bikcraft.svg" alt="">
             </a>
             <nav class="grid-12 header-menu">
                 <ul>
@@ -31,26 +30,45 @@
     </header>
     <section class="introducao-interna interna-portifolio">
         <div class="container">
-            <h1>Portifólio</h1>
-            <p>conheça os projetos que amamos mosotrar</p>
+            <h1 data-anime="400" class="fadeInDown">Portifólio</h1>
+            <p data-anime="800" class="fadeInDown">conheça os projetos que amamos mosotrar</p>
         </div>
     </section>
-    <section class="portifolio">
-        <div class="container">
-            <ul class="portifolio-lista">
+    <section data-anime="1200" class="portifolio fadeInDown">
+        <div class="container" data-slide="portifolio">
+            <ul class="portifolio-lista" >
                 <li class="grid-8"><img src="img/portfolio/retro.jpg" alt=""></li>
                 <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt=""></li>
                 <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt=""></li>
             </ul>
+            <ul class="portifolio-lista">
+                <li class="grid-8"><img src="img/portfolio/passeio.jpg" alt=""></li>
+                <li class="grid-8"><img src="img/portfolio/retro.jpg" alt=""></li>
+                <li class="grid-16"><img src="img/portfolio/esporte.jpg" alt=""></li>
+            </ul>
         </div>
     </section>
-    <section class="container">
+    <section class="container" data-slide="quote">
         <blockquote class="quote_cliente">
             <p>
-                "No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da
-                gestão inovadora da qual fazemos parte."
+                "Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta
+                atividade. Remendo à todos que amo."
             </p>
             <cite>Barbara Moss</cite>
+        </blockquote>
+        <blockquote class="quote_cliente">
+            <p>
+                "Nada melgor que dar um rolê com a minha Bikcraft na orla. Essa é minha companheira mais fiel, nunca me
+                traiu e está sempre a minha disposição."
+            </p>
+            <cite>johny Rato</cite>
+        </blockquote>
+        <blockquote class="quote_cliente">
+            <p>
+                "Aqueles que ainda não possuem uma Bikecraft, não sabem o que estão perdendo. A precisão é absurda e a
+                velocidade transcendental. Nunca vi nada igual."
+            </p>
+            <cite>Bernado</cite>
         </blockquote>
     </section>
     <section class="quebra">
@@ -81,9 +99,12 @@
             <div class="grid-4 footer-redes">
                 <h3>Redes Socias</h3>
                 <ul>
-                    <li><a href="https://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg" alt=""></a></li>
-                    <li><a href="https://twittercom" target="_blank"><img src="img/redes-sociais/twitter.svg" alt=""></a></li>
-                    <li><a href="https://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg" alt=""></a></li>
+                    <li><a href="https://facebook.com" target="_blank"><img src="img/redes-sociais/facebook.svg"
+                                alt=""></a></li>
+                    <li><a href="https://twittercom" target="_blank"><img src="img/redes-sociais/twitter.svg"
+                                alt=""></a></li>
+                    <li><a href="https://instagram.com" target="_blank"><img src="img/redes-sociais/instagram.svg"
+                                alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -93,6 +114,9 @@
             </div>
         </div>
     </footer>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

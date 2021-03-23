@@ -1,0 +1,16 @@
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.5s;
+  z-index: 1;
+  pointer-events: auto;
+}

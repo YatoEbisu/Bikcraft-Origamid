@@ -1,0 +1,124 @@
+/* Tablet */
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+  .qualidade::after {
+    left: 68px;
+  }
+  .produto-item h2 {
+    top: 65px;
+    left: 185px;
+  }
+  .produto-icone {
+    background: #000;
+    padding: 45px 0;
+  }
+  .produto-icone img {
+    width: 190px;
+  }
+  .produto-info p {
+    font-size: 16px;
+    line-height: 20px;
+    height: 130px;
+    padding: 20px 30px;
+  }
+  .produto-info ul {
+    height: 91.5px;
+  }
+  .footer-redes ul li a {
+    border: 3px solid #fec63e;
+    display: block;
+    padding: 6px;
+  }
+  .footer-redes ul li a img {
+    width: 26px;
+    height: 26px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 787px) {
+  .header {
+    position: relative;
+    padding-bottom: 0;
+  }
+  .logo {
+    margin: 0 auto 20px auto;
+  }
+  .header-menu {
+    text-align: center;
+  }
+  .header-menu ul li {
+    margin: 0 5px 5px 5px;
+  }
+  .header-menu ul li a {
+    border: solid 4px #000;
+    width: 136px;
+    display: block;
+    float: left;
+    transition: all ease-in 0.1s;
+  }
+  .header-menu ul li a:hover {
+    border-color: #fff;
+  }
+  .header-menu ul li a.menu-ativo {
+    color: #fff;
+    border-color: #fff;
+  }
+  .introducao {
+    margin-top: 0px;
+    padding-top: 40px;
+    background: url("../img/bg-mobile.jpg") no-repeat center;
+  }
+  .introducao h1 {
+    font-size: 36px;
+  }
+  .introducao-interna {
+    margin-top: 0;
+  }
+  .call {
+    padding-top: 10px;
+  }
+  .qualidade::after {
+    display: none;
+  }
+  .missao-sobre p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 0px;
+  }
+  .missao-sobre ul li {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .produto-item h2 {
+    top: 29px;
+    left: 80px;
+  }
+  .produto-icone {
+    background: #000;
+    padding: 25px 0;
+  }
+  .produto-icone img {
+    width: 190px;
+  }
+  .produto-info p {
+    font-size: 14px;
+    line-height: 20px;
+    height: auto;
+    padding: 20px 30px;
+  }
+  .produto-info ul li {
+    font-size: 16px;
+  }
+  #form_orcamento {
+    padding-right: 0;
+  }
+  .orcamento_dados ul {
+    padding-right: 0;
+  }
+  #form_contato {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .contato-mapa{
+    display: none;
+  }
+}

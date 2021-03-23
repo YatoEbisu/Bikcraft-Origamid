@@ -6,18 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikcraft - Contato</title>
-    <link rel="stylesheet" href="/style/normalize.css">
-    <link rel="stylesheet" href="/style/reset.css">
-    <link rel="stylesheet" href="/style/grid.css">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="stylesheet" href="/style/contato.css">
+    <link rel="stylesheet" href="style/style.min.css">
+
 </head>
+<script>document.documentElement.classList.add('js')</script>
 
 <body>
     <header class="header">
         <div class="container">
             <a href="index.html" class="grid-4">
-                <img src="img/bikcraft.svg" alt="">
+                <img class="logo" src="img/bikcraft.svg" alt="">
             </a>
             <nav class="grid-12 header-menu">
                 <ul>
@@ -31,12 +29,12 @@
     </header>
     <section class="introducao-interna interna-contato">
         <div class="container">
-            <h1>Contato</h1>
-            <p>tire suas duvidas com a gente</p>
+            <h1 data-anime="400" class="fadeInDown">Contato</h1>
+            <p data-anime="800" class="fadeInDown">tire suas duvidas com a gente</p>
         </div>
     </section>
 
-    <section class="contato container">
+    <section data-anime="1200" class="contato container fadeInDown">
         <form action="" id="form_contato" class="grid-8">
             <label for="nome">Nome</label>
             <input type="text" id="nome">
@@ -114,6 +112,9 @@
             </div>
         </div>
     </footer>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
